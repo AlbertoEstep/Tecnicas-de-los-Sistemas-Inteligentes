@@ -1,0 +1,101 @@
+
+ff: parsing domain file
+domain 'EJERCICIO1' defined
+ ... done.
+ff: parsing problem file
+problem 'EJERCICIO1-2' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+task contains conditional effects. turning off state domination.
+
+
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   22 into depth [1]
+                                  20            [1]
+                                  17            [1]
+                                  16            [1]
+                                  15            [1]
+                                  14            [1][2]
+                                  13            [1][2]
+                                  12            [1]
+                                  11            [1]
+                                  10            [1][2]
+                                   9            [1]
+                                   8            [1][2][3][4][5][6][7][8][9][10][11][12][13]
+                                   7            [1]
+                                   6            [1][2]
+                                   5            [1][2][3][4][5][6][7][8][9][10][11][12]
+                                   4            [1][2]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: IR Z6 Z24 AGENTE SUR
+        1: GIRARDERECHA SUR
+        2: IR Z24 Z23 AGENTE OESTE
+        3: IR Z23 Z15 AGENTE OESTE
+        4: COGER OSCAR4 AGENTE Z15
+        5: GIRARDERECHA OESTE
+        6: IR Z15 Z4 AGENTE NORTE
+        7: GIRARIZQUIERDA NORTE
+        8: IR Z4 Z3 AGENTE OESTE
+        9: GIRARDERECHA OESTE
+       10: IR Z3 Z8 AGENTE NORTE
+       11: IR Z8 Z9 AGENTE NORTE
+       12: GIRARDERECHA NORTE
+       13: IR Z9 Z10 AGENTE ESTE
+       14: IR Z10 Z16 AGENTE ESTE
+       15: GIRARIZQUIERDA ESTE
+       16: IR Z16 Z22 AGENTE NORTE
+       17: IR Z22 Z21 AGENTE NORTE
+       18: GIRARIZQUIERDA NORTE
+       19: ENTREGAR OSCAR4 AGENTE Z21 PRINCESA1
+       20: IR Z21 Z20 AGENTE OESTE
+       21: IR Z20 Z19 AGENTE OESTE
+       22: GIRARIZQUIERDA OESTE
+       23: IR Z19 Z18 AGENTE SUR
+       24: COGER OSCAR3 AGENTE Z18
+       25: IR Z18 Z9 AGENTE SUR
+       26: GIRARDERECHA SUR
+       27: GIRARDERECHA OESTE
+       28: GIRARDERECHA NORTE
+       29: IR Z9 Z10 AGENTE ESTE
+       30: IR Z10 Z16 AGENTE ESTE
+       31: GIRARIZQUIERDA ESTE
+       32: GIRARIZQUIERDA NORTE
+       33: ENTREGAR OSCAR3 AGENTE Z16 PRINCESA2
+       34: IR Z16 Z10 AGENTE OESTE
+       35: IR Z10 Z9 AGENTE OESTE
+       36: GIRARIZQUIERDA OESTE
+       37: IR Z9 Z8 AGENTE SUR
+       38: GIRARDERECHA SUR
+       39: GIRARDERECHA OESTE
+       40: COGER OSCAR2 AGENTE Z8
+       41: IR Z8 Z9 AGENTE NORTE
+       42: GIRARDERECHA NORTE
+       43: IR Z9 Z10 AGENTE ESTE
+       44: GIRARIZQUIERDA ESTE
+       45: IR Z10 Z12 AGENTE NORTE
+       46: ENTREGAR OSCAR2 AGENTE Z12 PRINCESA3
+     		Coste Total: 0.00
+
+
+time spent:    0.00 seconds instantiating 276 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 165 facts and 276 actions
+               0.00 seconds creating final representation with 165 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 225 states, to a max depth of 13
+               0.00 seconds total time
+

@@ -1,0 +1,145 @@
+
+ff: parsing domain file
+domain 'EJERCICIO1' defined
+ ... done.
+ff: parsing problem file
+problem 'EJERCICIO1-1' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+task contains conditional effects. turning off state domination.
+
+
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   22 into depth [1][2][3]
+                                  21            [1]
+                                  20            [1][2]
+                                  19            [1][2][3][4][5][6][7]
+                                  18            [1][2][3][4]
+                                  17            [1]
+                                  16            [1][2][3][4][5][6][7]
+                                  15            [1][2][3][4][5][6][7][8][9][10][11][12]
+                                  14            [1][2][3][4]
+                                  13            [1][2][3][4][5]
+                                  12            [1][2][3][4][5][6][7][8][9][10][11][12][13]
+                                   9            [1]
+                                   8            [1][2][3][4][5][6]
+                                   7            [1]
+                                   6            [1][2]
+                                   5            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21][22]
+                                   4            [1][2]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: GIRARDERECHA NORTE
+        1: IR Z1 Z2 AGENTE ESTE
+        2: GIRARIZQUIERDA ESTE
+        3: COGER OSCAR AGENTE Z2
+        4: IR Z2 Z7 AGENTE NORTE
+        5: IR Z7 Z13 AGENTE NORTE
+        6: IR Z13 Z17 AGENTE NORTE
+        7: GIRARDERECHA NORTE
+        8: GIRARDERECHA ESTE
+        9: ENTREGAR OSCAR AGENTE Z17 DICAPRIO
+       10: IR Z17 Z13 AGENTE SUR
+       11: GIRARIZQUIERDA SUR
+       12: IR Z13 Z9 AGENTE ESTE
+       13: GIRARDERECHA ESTE
+       14: IR Z9 Z8 AGENTE SUR
+       15: COGER MANZANA AGENTE Z8
+       16: IR Z8 Z3 AGENTE SUR
+       17: GIRARDERECHA SUR
+       18: GIRARDERECHA OESTE
+       19: IR Z3 Z8 AGENTE NORTE
+       20: IR Z8 Z9 AGENTE NORTE
+       21: IR Z9 Z18 AGENTE NORTE
+       22: IR Z18 Z19 AGENTE NORTE
+       23: GIRARDERECHA NORTE
+       24: IR Z19 Z20 AGENTE ESTE
+       25: IR Z20 Z21 AGENTE ESTE
+       26: GIRARDERECHA ESTE
+       27: ENTREGAR MANZANA AGENTE Z21 PRINCESA
+       28: IR Z21 Z22 AGENTE SUR
+       29: COGER ORO AGENTE Z22
+       30: IR Z22 Z16 AGENTE SUR
+       31: GIRARDERECHA SUR
+       32: IR Z16 Z10 AGENTE OESTE
+       33: IR Z10 Z9 AGENTE OESTE
+       34: GIRARDERECHA OESTE
+       35: GIRARDERECHA NORTE
+       36: GIRARDERECHA ESTE
+       37: IR Z9 Z8 AGENTE SUR
+       38: IR Z8 Z3 AGENTE SUR
+       39: GIRARIZQUIERDA SUR
+       40: IR Z3 Z4 AGENTE ESTE
+       41: IR Z4 Z5 AGENTE ESTE
+       42: GIRARIZQUIERDA ESTE
+       43: IR Z5 Z11 AGENTE NORTE
+       44: GIRARIZQUIERDA NORTE
+       45: GIRARIZQUIERDA OESTE
+       46: ENTREGAR ORO AGENTE Z11 PROFESOR
+       47: IR Z11 Z5 AGENTE SUR
+       48: GIRARDERECHA SUR
+       49: IR Z5 Z4 AGENTE OESTE
+       50: IR Z4 Z3 AGENTE OESTE
+       51: GIRARDERECHA OESTE
+       52: IR Z3 Z8 AGENTE NORTE
+       53: IR Z8 Z9 AGENTE NORTE
+       54: IR Z9 Z18 AGENTE NORTE
+       55: GIRARDERECHA NORTE
+       56: GIRARDERECHA ESTE
+       57: COGER ROSA AGENTE Z18
+       58: IR Z18 Z9 AGENTE SUR
+       59: GIRARDERECHA SUR
+       60: GIRARDERECHA OESTE
+       61: GIRARDERECHA NORTE
+       62: IR Z9 Z10 AGENTE ESTE
+       63: IR Z10 Z16 AGENTE ESTE
+       64: GIRARDERECHA ESTE
+       65: GIRARDERECHA SUR
+       66: ENTREGAR ROSA AGENTE Z16 PRINCIPE
+       67: IR Z16 Z10 AGENTE OESTE
+       68: IR Z10 Z9 AGENTE OESTE
+       69: GIRARIZQUIERDA OESTE
+       70: IR Z9 Z8 AGENTE SUR
+       71: IR Z8 Z3 AGENTE SUR
+       72: GIRARIZQUIERDA SUR
+       73: IR Z3 Z4 AGENTE ESTE
+       74: GIRARDERECHA ESTE
+       75: IR Z4 Z15 AGENTE SUR
+       76: GIRARDERECHA SUR
+       77: GIRARDERECHA OESTE
+       78: COGER ALGORITMO AGENTE Z15
+       79: IR Z15 Z4 AGENTE NORTE
+       80: GIRARIZQUIERDA NORTE
+       81: IR Z4 Z3 AGENTE OESTE
+       82: GIRARDERECHA OESTE
+       83: IR Z3 Z8 AGENTE NORTE
+       84: IR Z8 Z9 AGENTE NORTE
+       85: GIRARDERECHA NORTE
+       86: IR Z9 Z10 AGENTE ESTE
+       87: GIRARIZQUIERDA ESTE
+       88: IR Z10 Z12 AGENTE NORTE
+       89: ENTREGAR ALGORITMO AGENTE Z12 BRUJA
+     		Coste Total: 0.00
+
+
+time spent:    0.00 seconds instantiating 339 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 195 facts and 339 actions
+               0.00 seconds creating final representation with 195 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.01 seconds searching, evaluating 541 states, to a max depth of 22
+               0.01 seconds total time
+

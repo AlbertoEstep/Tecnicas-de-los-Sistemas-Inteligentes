@@ -1,0 +1,119 @@
+
+ff: parsing domain file
+domain 'EJERCICIO7' defined
+ ... done.
+ff: parsing problem file
+problem 'EJERCICIO7-2' defined
+ ... done.
+
+
+
+no optimization required. skipping criterion.
+
+
+no metric specified. plan length assumed.
+
+task contains conditional effects. turning off state domination.
+
+
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   28 into depth [1]
+                                  23            [1]
+                                  22            [1]
+                                  21            [1]
+                                  20            [1]
+                                  14            [1][2]
+                                  13            [1]
+                                  12            [1]
+                                   5            [1]
+                                   4            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15]
+                                   3            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21]
+                                   2            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: GIRARIZQUIERDA SUR AGENTE2
+        1: GIRARDERECHA NORTE AGENTE3
+        2: IR Z20 Z21 AGENTE2 ESTE PIEDRA ZAPATILLAS
+        3: GIRARDERECHA ESTE AGENTE2
+        4: IR Z9 Z10 AGENTE3 ESTE ARENA ZAPATILLAS
+        5: IR Z21 Z22 AGENTE2 SUR ARENA ZAPATILLAS
+        6: COGER ORO AGENTE2 Z22
+        7: IR Z22 Z16 AGENTE2 SUR ARENA ZAPATILLAS
+        8: IR Z10 Z16 AGENTE3 ESTE ARENA ZAPATILLAS
+        9: PASARADEALER AGENTE2 AGENTE3 ORO Z16
+       10: ENTREGAR ORO AGENTE3 Z16 PRINCIPE
+       11: GIRARDERECHA SUR AGENTE2
+       12: IR Z16 Z10 AGENTE2 OESTE ARENA ZAPATILLAS
+       13: IR Z10 Z9 AGENTE2 OESTE PIEDRA ZAPATILLAS
+       14: GIRARDERECHA OESTE AGENTE2
+       15: IR Z9 Z18 AGENTE2 NORTE ARENA ZAPATILLAS
+       16: GIRARIZQUIERDA ESTE AGENTE3
+       17: IR Z16 Z22 AGENTE3 NORTE ARENA ZAPATILLAS
+       18: COGER ROSA AGENTE2 Z18
+       19: IR Z18 Z19 AGENTE2 NORTE ARENA ZAPATILLAS
+       20: GIRARDERECHA NORTE AGENTE2
+       21: IR Z19 Z20 AGENTE2 ESTE PIEDRA ZAPATILLAS
+       22: IR Z20 Z21 AGENTE2 ESTE PIEDRA ZAPATILLAS
+       23: IR Z22 Z21 AGENTE3 NORTE PIEDRA ZAPATILLAS
+       24: PASARADEALER AGENTE2 AGENTE3 ROSA Z21
+       25: ENTREGAR ROSA AGENTE3 Z21 PRINCESA
+       26: GIRARIZQUIERDA ESTE AGENTE2
+       27: GIRARIZQUIERDA NORTE AGENTE2
+       28: GIRARDERECHA NORTE AGENTE1
+       29: IR Z21 Z20 AGENTE2 OESTE PIEDRA ZAPATILLAS
+       30: IR Z20 Z19 AGENTE2 OESTE ARENA ZAPATILLAS
+       31: IR Z1 Z2 AGENTE1 ESTE ARENA ZAPATILLAS
+       32: IR Z2 Z3 AGENTE1 ESTE ARENA ZAPATILLAS
+       33: GIRARIZQUIERDA OESTE AGENTE2
+       34: IR Z19 Z18 AGENTE2 SUR ARENA ZAPATILLAS
+       35: IR Z18 Z9 AGENTE2 SUR PIEDRA ZAPATILLAS
+       36: IR Z9 Z8 AGENTE2 SUR ARENA ZAPATILLAS
+       37: COGER MANZANA AGENTE2 Z8
+       38: GIRARIZQUIERDA ESTE AGENTE1
+       39: IR Z3 Z8 AGENTE1 NORTE ARENA ZAPATILLAS
+       40: PASARADEALER AGENTE2 AGENTE1 MANZANA Z8
+       41: IR Z8 Z9 AGENTE1 NORTE PIEDRA ZAPATILLAS
+       42: GIRARDERECHA NORTE AGENTE1
+       43: IR Z9 Z10 AGENTE1 ESTE ARENA ZAPATILLAS
+       44: GIRARIZQUIERDA ESTE AGENTE1
+       45: IR Z10 Z12 AGENTE1 NORTE PIEDRA ZAPATILLAS
+       46: ENTREGAR MANZANA AGENTE1 Z12 BRUJA
+       47: GIRARDERECHA NORTE AGENTE1
+       48: IR Z8 Z3 AGENTE2 SUR ARENA ZAPATILLAS
+       49: GIRARDERECHA ESTE AGENTE1
+       50: IR Z12 Z10 AGENTE1 SUR ARENA ZAPATILLAS
+       51: GIRARDERECHA SUR AGENTE2
+       52: IR Z3 Z2 AGENTE2 OESTE ARENA ZAPATILLAS
+       53: GIRARDERECHA SUR AGENTE1
+       54: GIRARDERECHA OESTE AGENTE2
+       55: GIRARDERECHA NORTE AGENTE2
+       56: IR Z10 Z9 AGENTE1 OESTE PIEDRA ZAPATILLAS
+       57: COGER OSCAR AGENTE2 Z2
+       58: IR Z2 Z3 AGENTE2 ESTE ARENA ZAPATILLAS
+       59: GIRARIZQUIERDA ESTE AGENTE2
+       60: IR Z3 Z8 AGENTE2 NORTE ARENA ZAPATILLAS
+       61: IR Z8 Z9 AGENTE2 NORTE PIEDRA ZAPATILLAS
+       62: PASARADEALER AGENTE2 AGENTE1 OSCAR Z9
+       63: IR Z9 Z13 AGENTE1 OESTE ARENA ZAPATILLAS
+       64: GIRARDERECHA OESTE AGENTE1
+       65: IR Z13 Z17 AGENTE1 NORTE PIEDRA ZAPATILLAS
+       66: ENTREGAR OSCAR AGENTE1 Z17 DICAPRIO
+     		Coste Total: 0.00
+
+
+time spent:    0.06 seconds instantiating 1166 easy, 981 hard action templates
+               0.00 seconds reachability analysis, yielding 365 facts and 1937 actions
+               0.00 seconds creating final representation with 359 relevant facts, 14 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               8.48 seconds searching, evaluating 88912 states, to a max depth of 21
+               8.54 seconds total time
+

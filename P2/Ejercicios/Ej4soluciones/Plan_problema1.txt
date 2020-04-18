@@ -1,0 +1,168 @@
+
+ff: parsing domain file
+domain 'EJERCICIO4' defined
+ ... done.
+ff: parsing problem file
+problem 'EJERCICIO4-1' defined
+ ... done.
+
+
+
+no optimization required. skipping criterion.
+
+
+no metric specified. plan length assumed.
+
+task contains conditional effects. turning off state domination.
+
+
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   33 into depth [1][2][3]
+                                  32            [1][2][3][4]
+                                  31            [1][2]
+                                  30            [1][2]
+                                  27            [1]
+                                  26            [1]
+                                  25            [1][2][3][4][5][6][7]
+                                  23            [1][2][3][4][5][6][7]
+                                  22            [1][2][3][4][5][6]
+                                  21            [1][2]
+                                  20            [1][2][3][4][5][6][7]
+                                  19            [1]
+                                  18            [1][2]
+                                  17            [1]
+                                  16            [1][2]
+                                  15            [1][2]
+                                  14            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15]
+                                  13            [1][2]
+                                  12            [1]
+                                  11            [1][2][3][4]
+                                  10            [1]
+                                   9            [1]
+                                   8            [1][2][3]
+                                   7            [1][2][3]
+                                   6            [1][2][3][4][5][6]
+                                   5            [1][2] --- pruning stopped --- [1][2][3][4][5][6][7][8][9][10]
+                                   4            [1][2]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: GIRARDERECHA NORTE
+        1: IR Z1 Z2 AGENTE ESTE ARENA ZAPATILLAS
+        2: COGER OSCAR AGENTE Z2
+        3: IR Z2 Z3 AGENTE ESTE ARENA ZAPATILLAS
+        4: GIRARIZQUIERDA ESTE
+        5: IR Z3 Z8 AGENTE NORTE ARENA ZAPATILLAS
+        6: IR Z8 Z9 AGENTE NORTE PIEDRA ZAPATILLAS
+        7: GIRARIZQUIERDA NORTE
+        8: IR Z9 Z13 AGENTE OESTE ARENA ZAPATILLAS
+        9: GIRARDERECHA OESTE
+       10: IR Z13 Z17 AGENTE NORTE PIEDRA ZAPATILLAS
+       11: ENTREGAR OSCAR AGENTE Z17 DICAPRIO
+       12: GIRARDERECHA NORTE
+       13: GIRARDERECHA ESTE
+       14: IR Z17 Z13 AGENTE SUR ARENA ZAPATILLAS
+       15: GIRARIZQUIERDA SUR
+       16: IR Z13 Z9 AGENTE ESTE PIEDRA ZAPATILLAS
+       17: IR Z9 Z10 AGENTE ESTE ARENA ZAPATILLAS
+       18: IR Z10 Z16 AGENTE ESTE ARENA ZAPATILLAS
+       19: GIRARIZQUIERDA ESTE
+       20: IR Z16 Z22 AGENTE NORTE ARENA ZAPATILLAS
+       21: GIRARIZQUIERDA NORTE
+       22: GIRARIZQUIERDA OESTE
+       23: COGER ORO AGENTE Z22
+       24: IR Z22 Z16 AGENTE SUR ARENA ZAPATILLAS
+       25: GIRARDERECHA SUR
+       26: ENTREGAR ORO AGENTE Z16 PRINCIPE
+       27: IR Z16 Z10 AGENTE OESTE ARENA ZAPATILLAS
+       28: IR Z10 Z9 AGENTE OESTE PIEDRA ZAPATILLAS
+       29: GIRARIZQUIERDA OESTE
+       30: GIRARIZQUIERDA SUR
+       31: COGER BIKINI AGENTE Z9
+       32: METERENMOCHILA BIKINI
+       33: GIRARIZQUIERDA ESTE
+       34: IR Z9 Z18 AGENTE NORTE ARENA ZAPATILLAS
+       35: COGER ROSA AGENTE Z18
+       36: IR Z18 Z19 AGENTE NORTE ARENA ZAPATILLAS
+       37: GIRARDERECHA NORTE
+       38: IR Z19 Z20 AGENTE ESTE PIEDRA ZAPATILLAS
+       39: IR Z20 Z21 AGENTE ESTE PIEDRA ZAPATILLAS
+       40: ENTREGAR ROSA AGENTE Z21 PRINCESA
+       41: GIRARDERECHA ESTE
+       42: IR Z21 Z22 AGENTE SUR ARENA ZAPATILLAS
+       43: IR Z22 Z16 AGENTE SUR ARENA ZAPATILLAS
+       44: GIRARDERECHA SUR
+       45: IR Z16 Z10 AGENTE OESTE ARENA ZAPATILLAS
+       46: IR Z10 Z9 AGENTE OESTE PIEDRA ZAPATILLAS
+       47: GIRARDERECHA OESTE
+       48: GIRARDERECHA NORTE
+       49: GIRARDERECHA ESTE
+       50: IR Z9 Z8 AGENTE SUR ARENA ZAPATILLAS
+       51: GIRARDERECHA SUR
+       52: GIRARDERECHA OESTE
+       53: COGER MANZANA AGENTE Z8
+       54: IR Z8 Z9 AGENTE NORTE PIEDRA ZAPATILLAS
+       55: GIRARDERECHA NORTE
+       56: IR Z9 Z10 AGENTE ESTE ARENA ZAPATILLAS
+       57: GIRARIZQUIERDA ESTE
+       58: IR Z10 Z12 AGENTE NORTE PIEDRA ZAPATILLAS
+       59: GIRARIZQUIERDA NORTE
+       60: GIRARIZQUIERDA OESTE
+       61: ENTREGAR MANZANA AGENTE Z12 BRUJA
+       62: IR Z12 Z10 AGENTE SUR ARENA ZAPATILLAS
+       63: GIRARDERECHA SUR
+       64: IR Z10 Z9 AGENTE OESTE PIEDRA ZAPATILLAS
+       65: GIRARDERECHA OESTE
+       66: GIRARDERECHA NORTE
+       67: GIRARDERECHA ESTE
+       68: IR Z9 Z8 AGENTE SUR ARENA ZAPATILLAS
+       69: IR Z8 Z3 AGENTE SUR ARENA ZAPATILLAS
+       70: GIRARIZQUIERDA SUR
+       71: IR Z3 Z4 AGENTE ESTE AGUA BIKINI
+       72: GIRARDERECHA ESTE
+       73: IR Z4 Z15 AGENTE SUR ARENA ZAPATILLAS
+       74: GIRARIZQUIERDA SUR
+       75: GIRARIZQUIERDA ESTE
+       76: COGER ALGORITMO AGENTE Z15
+       77: IR Z15 Z4 AGENTE NORTE AGUA BIKINI
+       78: DEJAR ALGORITMO AGENTE Z4
+       79: GIRARDERECHA NORTE
+       80: COGER ZAPATILLAS AGENTE Z4
+       81: IR Z4 Z5 AGENTE ESTE BOSQUE ZAPATILLAS
+       82: GIRARIZQUIERDA ESTE
+       83: DEJAR ZAPATILLAS AGENTE Z5
+       84: GIRARIZQUIERDA NORTE
+       85: SACARDEMOCHILA BIKINI
+       86: DEJAR BIKINI AGENTE Z5
+       87: COGER ZAPATILLAS AGENTE Z5
+       88: METERENMOCHILA ZAPATILLAS
+       89: COGER BIKINI AGENTE Z5
+       90: IR Z5 Z4 AGENTE OESTE AGUA BIKINI
+       91: GIRARDERECHA OESTE
+       92: DEJAR BIKINI AGENTE Z4
+       93: COGER ALGORITMO AGENTE Z4
+       94: GIRARDERECHA NORTE
+       95: IR Z4 Z5 AGENTE ESTE BOSQUE ZAPATILLAS
+       96: GIRARIZQUIERDA ESTE
+       97: IR Z5 Z11 AGENTE NORTE ARENA ZAPATILLAS
+       98: ENTREGAR ALGORITMO AGENTE Z11 PROFESOR
+     		Coste Total: 0.00
+
+
+time spent:    0.01 seconds instantiating 397 easy, 327 hard action templates
+               0.00 seconds reachability analysis, yielding 239 facts and 654 actions
+               0.00 seconds creating final representation with 237 relevant facts, 2 relevant fluents
+               0.01 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.03 seconds searching, evaluating 909 states, to a max depth of 15
+               0.05 seconds total time
+
